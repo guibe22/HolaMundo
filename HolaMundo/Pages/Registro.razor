@@ -2,53 +2,40 @@
 
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <div class="form-group border border-black bg-light">
-                <h2 class="text-primary">Registro de Ocupaciones</h2>
-            </div>
-        </div>
+<div class="card">
+    <div class="card-header text-center">
+        <h2 class="text-primary">Registro de Ocupaciones</h2>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="form-group border border-black">
-                <div class="form-row align-items-center">
-                    <div class="col-auto">
-                        <label for="idOcupacion" class="text-primary">ID Ocupación:</label>
-                        <input type="text" class="form-control" id="idOcupacion" placeholder="Ingrese el ID de la Ocupación">
-                    </div>
-                    <div class="col-auto">
-                        <button name="btnBuscar" id="btnBuscar" class="btn btn-primary">
-                            <span class="oi oi-magnifying-glass"></span> Buscar
-                        </button>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="txtDescripcion" class="text-primary">Descripción:</label>
-                    <textarea class="form-control" name="txtDescripcion" id="txtDescripcion" rows="6"></textarea>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <div class="form-group">
-                <button name="btNuevo" id="btNuevo" class="btn btn-primary mr-2">
-                    <span class="oi oi-plus"></span> Nuevo
-                </button>
-                <button name="btnGuardar" id="btnGuardar" class="btn btn-success mr-2">
-                    <span class=" oi oi-cloud-download"></span> Guardar
-                </button>
-                <button name="btnEliminar" id="btnEliminar" class="btn btn-danger">
-                    <span class="oi oi-trash"></span> Eliminar
-                </button>
-            </div>
-        </div>
-    </div>
+    <div class="card-body">
+        <div class="form-row align-items-center">
+            <div class="col-auto">
 
+                <label for="idOcupacion" class="text-primary">ID Ocupación:</label>
+                <input type="text" class="form-control" id="idOcupacion" placeholder="Ingrese el ID de la Ocupación">
+
+                <button name="btnBuscar" id="btnBuscar" class="btn btn-primary">
+                    <span class="oi oi-magnifying-glass"></span> Buscar
+                </button>
+            </div>
+            
+        </div>
+        <div class="card-footer">">
+            <label for="txtDescripcion" class="text-primary">Descripción:</label>
+            <textarea class="form-control" name="txtDescripcion" id="txtDescripcion" rows="6"></textarea>
+        </div>
+        <div class="text-center">
+            <button name="btNuevo" id="btNuevo" class="btn btn-primary mr-2">
+                <span class="oi oi-plus"></span> Nuevo
+            </button>
+            <button name="btnGuardar" id="btnGuardar" class="btn btn-success mr-2">
+                <span class=" oi oi-cloud-download"></span> Guardar
+            </button>
+            <button name="btnEliminar" id="btnEliminar" class="btn btn-danger">
+                <span class="oi oi-trash"></span> Eliminar
+            </button>
+        </div>
+    </div>
 </div>
-
 @code {
 
 }
